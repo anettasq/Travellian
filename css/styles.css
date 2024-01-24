@@ -1,0 +1,118 @@
+/* var */
+:root {
+    --primary-color-dark: #FF7757;
+    --primary-color-light: #FFD2C7;
+    --secondary-color-dark: #172432;
+    --secondary-color-light: #767E86;
+    --secondary-color-white: #FFF;
+}
+
+/* base */
+body {
+    background-color: aqua;
+    color: var(--secondary-color-dark);
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    font-size: 84px;
+}
+
+/* button */
+.button {
+    border: none;
+    border-radius: 12px;
+    background-color: var(--primary-color-dark);
+    color: var(--secondary-color-white);
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button-login,
+.button-sign-up {
+    background-color: transparent;
+}
+
+.button-login:hover,
+.button-sign-up:hover {
+    border: none;
+    border-radius: 12px;
+    background-color: var(--primary-color-dark);
+}
+
+/* link */
+.header-link {
+    color: var(--secondary-color-white);
+    text-decoration: none;
+}
+
+.header-link:hover {
+    text-decoration: underline solid var(--primary-color-dark) 3px;
+}
+
+/* sections */
+
+/* .section-title {} */
+
+.section-text {
+    color: var(--secondary-color-light);
+}
+
+/* hero */
+.hero-title {
+    color: var(--secondary-color-white);
+}
+
+.hero-text {
+    color: var(--secondary-color-white);
+}
+
+/* destinations */
+
+.destinations-card {
+    color: var(--secondary-color-white);
+}
+
+/* offers */
+.offer-title {
+    color: var(--secondary-color-light);
+}
+
+.offer-price {
+    color: var(--primary-color-dark);
+}
+
+.offer-start-price {
+    color: var(--secondary-color-light);
+}
+
+/* blog */
+
+.blog-link {
+    color: var(--primary-color-dark);
+}
+
+/* testimonials */
+.testimonials-card {
+    color: var(--secondary-color-light);
+}
+
+/* aside */
+.aside-title {
+    color: var(--secondary-color-light);
+}
+
+/* footer */
+.footer-title {
+    color: var(--secondary-color-white);
+}
+
+.footer-link {
+    color: var(--secondary-color-white);
+    text-decoration: none;
+}

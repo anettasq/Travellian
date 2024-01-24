@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travellian</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
@@ -14,82 +15,95 @@
                 <img src="./images/logo.svg" alt="logo of Travellian">
             </a>
             <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="#destinations-section">Destinations</a></li>
-                <li><a href="#special-offer-section">Special Offer</a></li>
-                <li><a href="#blog-section">Blog</a></li>
-                <li><a href="#trip-planners-section">Pricing</a></li>
-                <li><a href="#galery-section">Gallery</a></li>
+                <li><a class="header-link" href="./index.html">Home</a></li>
+                <li><a class="header-link" href="#destinations-section">Destinations</a></li>
+                <li><a class="header-link" href="#special-offer-section">Special Offer</a></li>
+                <li><a class="header-link" href="#blog-section">Blog</a></li>
+                <li><a class="header-link" href="#trip-planners-section">Pricing</a></li>
+                <li><a class="header-link" href="#galery-section">Gallery</a></li>
             </ul>
         </nav>
-        <button type="button">Login</button>
-        <button type="button">Sign up</button>
+        <button class="button button-login" type="button">Login</button>
+        <button class="button button-sign-up" type="button">Sign up</button>
     </header>
     <main>
         <section>
-            <h1>Start your unforgettable journey with us.</h1>
-            <p>The best travel for your jouney begins now</p>
+            <h1 class="hero-title">Start your unforgettable journey with us.</h1>
+            <p class="hero-text">The best travel for your jouney begins now</p>
         </section>
         <section id="destinations-section">
-            <h2>Popular Destinations</h2>
-            <p>Most popular destinations around the world, from historical places to natural wonders.</p>
+            <h2 class="section-tile">Popular Destinations</h2>
+            <p class="section-text">Most popular destinations around the world, from historical places to natural
+                wonders.</p>
             <ul>
                 <li>
-                    <article>
+                    <article class="destinations-card">
                         <h3>Monument of Berlin</h3>
                         <p>Berlin, Germany</p>
                     </article>
                 </li>
                 <li>
-                    <article>
+                    <article class="destinations-card">
                         <h3>Millennium Bridge</h3>
                         <p>London, United Kingdom</p>
                     </article>
                 </li>
                 <li>
-                    <article>
+                    <article class="destinations-card">
                         <h3>Rialto Bridge</h3>
                         <p>Venice, Italy</p>
                     </article>
                 </li>
                 <li>
-                    <article>
+                    <article class="destinations-card">
                         <h3>Sea of Orange Tiles</h3>
                     </article>
                 </li>
             </ul>
         </section>
         <section id="special-offer-section">
-            <h2>Special Offer</h2>
-            <p>Check out our special offer and discounts
+            <h2 class="section-tile">Special Offer</h2>
+            <p class="section-text">Check out our special offer and discounts
             </p>
             <ul>
                 <li>
                     <article>
-                        <h3>Lisbon, Portugal</h3>
-                        <p>From</p>
-                        <p>€500</p>
+                        <h3 class="offer-title">Lisbon, Portugal</h3>
+                        <p>
+                            5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the
+                            renaissance. Passage and going through the cites of the world in classical literature.
+                        </p>
+                        <p class="offer-start-price">From</p>
+                        <p class="offer-price">€500</p>
                     </article>
                 </li>
                 <li>
                     <article>
-                        <h3>Athens, Greece</h3>
-                        <p>From</p>
-                        <p>€800</p>
+                        <h3 class="offer-title">Athens, Greece</h3>
+                        <p>
+                            5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the
+                            renaissance. Passage and going through the cites of the world in classical literature.
+                        </p>
+                        <p class="offer-start-price">From</p>
+                        <p class="offer-price">€800</p>
                     </article>
                 </li>
                 <li>
                     <article>
-                        <h3>Rome, Italy</h3>
-                        <p>€750</p>
-                        <p>From</p>
+                        <h3 class="offer-title">Rome, Italy</h3>
+                        <p>
+                            5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the
+                            renaissance. Passage and going through the cites of the world in classical literature.
+                        </p>
+                        <p class="offer-start-price">From</p>
+                        <p class="offer-price">€750</p>
                     </article>
                 </li>
             </ul>
         </section>
         <section id="blog-section">
-            <h2>Our Blog</h2>
-            <p>An insight the incredible experience in the world</p>
+            <h2 class="section-tile">Our Blog</h2>
+            <p class="section-text">An insight the incredible experience in the world</p>
             <article>
                 <img src="./images/blog-photo-italy.jpg" alt="city in the beautiful rocking seaside in Italy">
                 <h3>Beautiful Italy Let’s travel</h3>
@@ -103,14 +117,17 @@
                     Nor again is there
                     anyone who loves or pursues.
                 </p>
+                <p><a href="#" class="blog-link">Read more</a></p>
             </article>
         </section>
         <section id="trip-planners-section">
-            <h2>Trip Planners</h2>
-            <p>20 years from now you will be more disappointed by the things that you didn’t do. Stop regretting and
+            <h2 class="section-tile">Trip Planners</h2>
+            <p class="section-text">20 years from now you will be more disappointed by the things that you didn’t do.
+                Stop regretting and
                 start travelling,
                 start throwing off the bowlines.
             </p>
+            <button class="button" type="button">View all trip plans</button>
             <ul>
                 <li>
                     <article>
@@ -142,8 +159,8 @@
             </ul>
         </section>
         <section id="galery-section">
-            <h2>Destination Gallery</h2>
-            <p>Our photo gallery on trip</p>
+            <h2 class="section-tile">Destination Gallery</h2>
+            <p class="section-text">Our photo gallery on trip</p>
             <ul>
                 <li></li>
                 <li></li>
@@ -152,10 +169,10 @@
             </ul>
         </section>
         <section>
-            <h2>Traveler’s Experiences</h2>
+            <h2 class="section-tile">Traveler’s Experiences</h2>
             <ul>
                 <li>
-                    <article>
+                    <article class="testimonials-card">
                         <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain
                             was
                             born and I will give
@@ -169,7 +186,7 @@
                     </article>
                 </li>
                 <li>
-                    <article>
+                    <article class="testimonials-card">
                         <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain
                             was
                             born and I will give
@@ -183,7 +200,7 @@
                     </article>
                 </li>
                 <li>
-                    <article>
+                    <article class="testimonials-card">
                         <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain
                             was
                             born and I will give
@@ -200,42 +217,42 @@
         </section>
     </main>
     <aside>
-        <h2>Our Newsletter</h2>
+        <h2 class="aside-title">Our Newsletter</h2>
     </aside>
     <footer>
         <a href="#">
             <img src="./images/logo.svg" alt="logo of Travellian">
         </a>
         <p>Copyright © Travellian 2020 All rights reserved</p>
-        <h2>Menu</h2>
+        <h2 class="footer-title">Menu</h2>
         <nav>
             <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="#destinations-section">Destinations</a></li>
-                <li><a href="#special-offer-section">Special Offer</a></li>
-                <li><a href="#blog-section">Blog</a></li>
-                <li><a href="#trip-planners-section">Pricing</a></li>
-                <li><a href="#galery-section">Gallery</a></li>
+                <li><a class="footer-link" href="./index.html">Home</a></li>
+                <li><a class="footer-link" href="#destinations-section">Destinations</a></li>
+                <li><a class="footer-link" href="#special-offer-section">Special Offer</a></li>
+                <li><a class="footer-link" href="#blog-section">Blog</a></li>
+                <li><a class="footer-link" href="#trip-planners-section">Pricing</a></li>
+                <li><a class="footer-link" href="#galery-section">Gallery</a></li>
             </ul>
         </nav>
-        <h2>Information</h2>
+        <h2 class="footer-title">Information</h2>
         <address>
             <ul>
-                <li><a href="#" target="_blank">Destinations</a></li>
-                <li><a href="#" target="_blank">Supports</a></li>
-                <li><a href="#" target="_blank">Terms & Conditions</a></li>
-                <li><a href="#" target="_blank">Privacy</a></li>
+                <li><a class="footer-link" href="#" target="_blank">Destinations</a></li>
+                <li><a class="footer-link" href="#" target="_blank">Supports</a></li>
+                <li><a class="footer-link" href="#" target="_blank">Terms & Conditions</a></li>
+                <li><a class="footer-link" href="#" target="_blank">Privacy</a></li>
             </ul>
         </address>
-        <h2>Contact info</h2>
+        <h2 class="footer-title">Contact info</h2>
         <address>
             <ul>
-                <li><a href="tel:+123456789">+123 456 789</a></li>
-                <li><a href="mailto:info@travellian.com">info@travellian.com</a></li>
-                <li><a href="https://maps.app.goo.gl/YwV43qxRCTr2Uoiq6" target="_blank">1245, New Yourk, USA</a></li>
+                <li><a class="footer-link" href="tel:+123456789">+123 456 789</a></li>
+                <li><a class="footer-link" href="mailto:info@travellian.com">info@travellian.com</a></li>
+                <li><a class="footer-link" href="https://maps.app.goo.gl/YwV43qxRCTr2Uoiq6" target="_blank">1245, New Yourk, USA</a></li>
             </ul>
         </address>
-        <h2>Follow us on</h2>
+        <h2 class="footer-title">Follow us on</h2>
         <address>
             <ul>
                 <li><a href="#" target="_blank"><!--iconfb--></a></li>
