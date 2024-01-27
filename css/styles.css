@@ -31,6 +31,10 @@
 }
 
 /* var */
+* {
+    box-sizing: border-box;
+}
+
 :root {
     --primary-color-dark: #FF7757;
     --primary-color-light: #FFD2C7;
@@ -45,8 +49,19 @@ body {
     color: var(--secondary-color-dark);
     font-family: Rubik, sans-serif;
     font-weight: 400;
+    margin: 0;
     font-size: 18px;
     line-height: 1.16;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
 }
 
 ul {
@@ -60,6 +75,7 @@ ul {
     border-radius: 12px;
     background-color: var(--primary-color-dark);
     color: var(--secondary-color-white);
+    padding: 20px 32px;
     font-size: 20px;
 }
 
@@ -80,6 +96,19 @@ ul {
     background-color: var(--primary-color-dark);
 }
 
+.button-details {
+    padding: 20px 40px;
+    text-transform: uppercase;
+}
+
+.button-trip {
+    padding: 20px;
+}
+
+.button-subsribe {
+    padding: 16px 40px;
+}
+
 
 /* menu-link */
 .header-link {
@@ -95,26 +124,47 @@ ul {
 
 /* sections */
 
+.section {
+    padding: 140px 0;
+}
+
 .section-title {
     font-size: 64px;
     font-family: 'Playfair Display', serif;
     font-weight: 400;
     line-height: 1.3;
+    margin-bottom: 20px;
 }
 
 .section-text {
     color: var(--secondary-color-light);
     font-size: 24px;
+    margin-top: 32px;
+    margin-bottom: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 24px;
 }
 
 /* hero */
+
+.hero-section {
+    padding: 270px 0;
+}
+
 .hero-title {
     font-size: 84px;
     color: var(--secondary-color-white);
+    margin-bottom: 16px;
 }
 
 .hero-text {
     color: var(--secondary-color-white);
+    margin-bottom: 0;
 }
 
 /* destinations */
@@ -194,6 +244,11 @@ ul {
 }
 
 /* testimonials */
+
+.testimonials-section {
+    padding-bottom: 240px;
+}
+
 .testimonials-card {
     color: var(--secondary-color-light);
     line-height: 1.3;
@@ -207,12 +262,27 @@ ul {
 
 /* aside */
 
+.aside-section {
+    width: 100%;
+    max-width: 1126px;
+    /* +24px */
+    padding: 24 px;
+    margin: auto;
+    border: none;
+    border-radius: 26px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.30);
+}
+
 .aside-title {
     color: var(--secondary-color-light);
     font-family: 'Playfair Display', serif;
     font-weight: 400;
     font-size: 64px;
     line-height: 1.3;
+}
+
+.input {
+    padding: 24px 40px;
 }
 
 /* footer */
