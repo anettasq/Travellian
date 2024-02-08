@@ -44,6 +44,7 @@
     --secondary-color-light: #767E86;
     --secondary-color-light-grey: #F5F6F7;
     --secondary-color-white: #FFF;
+    --secondary-color-yellow: #FFC107;
 }
 
 /* base */
@@ -161,6 +162,7 @@ a {
 
 .section {
     padding: 140px 0;
+    position: relative;
 }
 
 .section-title {
@@ -169,6 +171,7 @@ a {
     font-weight: 400;
     line-height: 1.3;
     margin-bottom: 55px;
+    position: relative;
 }
 
 .section-text {
@@ -185,9 +188,8 @@ a {
 
 .container {
     width: 100%;
-    max-width: 95vw;
-    ;
-    /* max-width: 1400px; */
+    /* max-width: 95vw; */
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 24px;
 }
@@ -240,12 +242,18 @@ a {
 
 /* destinations */
 
+.destinations-title {
+    margin-bottom: 20px;
+}
+
 .destinations-title::after {
     content: '';
-    display: block;
     width: 365px;
     height: 3px;
     background-color: var(--primary-color-dark);
+    position: absolute;
+    left: 0;
+    bottom: -20px;
 }
 
 .destinations-list {
@@ -281,14 +289,17 @@ a {
 /* offers */
 .offers-title {
     text-align: right;
+    margin-bottom: 20px;
 }
 
 .offers-title::after {
     content: '';
-    display: block;
     width: 241px;
     height: 3px;
     background-color: var(--primary-color-dark);
+    position: absolute;
+    right: 0;
+    bottom: -20px;
 }
 
 .offers-text {
@@ -359,10 +370,12 @@ a {
 
 .blog-title::after {
     content: '';
-    display: block;
     width: 150px;
     height: 3px;
     background-color: var(--primary-color-dark);
+    position: absolute;
+    left: 0;
+    bottom: -20px;
 }
 
 .blog-article-title {
@@ -419,12 +432,18 @@ a {
     min-width: 400px;
 }
 
+.trip-title {
+    margin-bottom: 20px;
+}
+
 .trip-title::after {
     content: '';
-    display: block;
     width: 231px;
     height: 3px;
     background-color: var(--primary-color-dark);
+    position: absolute;
+    left: 0;
+    bottom: -20px;
 }
 
 .trip-text {
@@ -478,12 +497,18 @@ flex-basis: calc((100% - 64px) / 3);
 
 /* gallery */
 
+.galery-title {
+    margin-bottom: 20px;
+}
+
 .galery-title::after {
     content: '';
-    display: block;
     width: 283px;
     height: 3px;
     background-color: var(--primary-color-dark);
+    position: absolute;
+    left: 0;
+    bottom: -20px;
 }
 
 .gallery {
@@ -499,19 +524,21 @@ flex-basis: calc((100% - 64px) / 3);
 /* testimonials */
 
 .testimonials-section {
-    padding-bottom: 240px;
+    padding-bottom: 134px;
 }
 
 .testimonials-title::after {
     content: '';
-    display: block;
     width: 347px;
     height: 3px;
     background-color: var(--primary-color-dark);
+    position: absolute;
+    left: 0;
+    bottom: -20px;
 }
 
 .testimonials-section-text {
-    margin-bottom: 100px;
+    margin-bottom: 160px;
 }
 
 .testimonials-list {
@@ -521,13 +548,16 @@ flex-basis: calc((100% - 64px) / 3);
     margin-bottom: 160px;
 }
 
-/* .testimonials-card {
+.testimonials-card {
     flex-shrink: 0;
-} */
+    position: relative;
+}
 
 .testimonials-client-photo {
     border-radius: 50%;
-    /* 40px -65px */
+    position: absolute;
+    top: -75px;
+    left: 40px;
 }
 
 .testimonial-card-content {
@@ -542,22 +572,35 @@ flex-basis: calc((100% - 64px) / 3);
     gap: 20px;
 }
 
+.icon-star {
+    fill: var(--secondary-color-yellow);
+}
+
 .testimonials-client-name {
     font-family: 'Playfair Display', serif;
     font-weight: 400;
     font-size: 24px;
+    margin-bottom: 4px;
 }
 
 /* aside */
 
 .aside-section {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    position: relative;
+    z-index: 1;
+    top: 116px;
     width: 100%;
-    max-width: 1126px;
+    max-width: 1262px;
+    /* max-width: 1126px; */
     /* +24px */
-    padding: 24 px;
+    padding: 60px 80px;
     margin: auto;
     border: none;
     border-radius: 26px;
+    background-color: var(--secondary-color-white);
     box-shadow: 0px 0px 4px 0px var(--secondary-color-dark);
 }
 
@@ -567,6 +610,12 @@ flex-basis: calc((100% - 64px) / 3);
     font-weight: 400;
     font-size: 64px;
     line-height: 1.3;
+}
+
+.aside-content {
+    display: flex;
+    gap: 32px;
+    align-items: flex-end;
 }
 
 .input {
