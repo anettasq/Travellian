@@ -121,7 +121,7 @@ a {
 }
 
 .button-subsribe {
-    padding: 16px 40px;
+    padding: 24px 35px;
 }
 
 /* slide-button */
@@ -159,18 +159,19 @@ a {
     color: var(--secondary-color-white);
     text-decoration: none;
     font-size: 20px;
-    transition: text-decoration 0.3s;
+    /* transition: text-decoration 0.3s; */
 }
 
 .header-link:hover {
     text-decoration: underline solid var(--primary-color-dark) 3px;
+    text-underline-offset: 2px;
     /* font-weight: 500; */
 }
 
 /* sections */
 
 .section {
-    padding: 140px 0;
+    padding: 140px 32px;
     position: relative;
 }
 
@@ -244,7 +245,6 @@ a {
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
-    padding-bottom: 656px;
     /* background-attachment: fixed; */
 }
 
@@ -253,6 +253,7 @@ a {
 }
 
 .hero-title {
+    max-width: 1200px;
     font-size: 84px;
     color: var(--secondary-color-white);
     margin-bottom: 16px;
@@ -263,13 +264,47 @@ a {
 }
 
 .hero-section-booking {
-    background-color: var(--secondary-color-white);
     max-width: 1205px;
-    padding: 75px 0;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: -32px;
+}
+
+.booking-form {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 75px 100px 75px 32px;
+    background-color: var(--secondary-color-white);
+}
+
+.booking-lable {
+    display: block;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    color: var(--secondary-color-light);
+}
+
+.booking-input {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    padding-bottom: 10px;
+    width: 196px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
 }
 
 .booking-button {
-    padding: 60px 20px;
+    padding: 60px 53px 60px 20px;
+    border-radius: 0 20px 20px 0;
+    font-size: 36px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    line-height: 1.3;
+    text-align: left;
 }
 
 /* destinations */
@@ -428,12 +463,17 @@ a {
     bottom: -20px;
 }
 
+.blog-article-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
 .blog-article-title {
     font-family: 'Playfair Display', serif;
     font-weight: 400;
     font-size: 54px;
     line-height: 1.3;
-    margin-bottom: 24px;
 }
 
 .blog-article-text {
@@ -650,10 +690,6 @@ a {
 
 /* testimonials */
 
-.testimonials-section {
-    padding-bottom: 134px;
-}
-
 .testimonials-title::after {
     content: '';
     width: 347px;
@@ -716,16 +752,15 @@ a {
 .aside-section {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 100px;
     position: relative;
-    z-index: 1;
-    top: 116px;
-    width: 100%;
+    bottom: -116px;
     max-width: 1262px;
     /* max-width: 1126px; */
     /* +24px */
     padding: 60px 80px;
-    margin: auto;
+    margin: -116px auto 0 auto;
     border: none;
     border-radius: 26px;
     background-color: var(--secondary-color-white);
@@ -738,6 +773,7 @@ a {
     font-weight: 400;
     font-size: 64px;
     line-height: 1.3;
+    width: 440px;
 }
 
 .aside-content {
@@ -746,8 +782,25 @@ a {
     align-items: flex-end;
 }
 
-.input {
+.aside-label {
+font-size: 20px;
+color: var(--secondary-color-light);
+}
+
+.aside-input {
+    margin-top: 16px;
     padding: 24px 40px;
+    width: 100%;
+    background-color: var(--primary-color-light);
+    font-size: 20px;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+}
+
+.aside-input::placeholder {
+    color: var(--primary-color-dark);
+    font-size: 20px;
 }
 
 /* footer */
