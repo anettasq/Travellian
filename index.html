@@ -37,15 +37,36 @@
                     <h1 class="section-title hero-title">Start your unforgettable journey with us.</h1>
                     <p class="section-text hero-text">The best travel for your jouney begins now</p>
                 </div>
-                <!-- <div class="hero-section-booking">
-                    <form class="booking-form" name="booking-form" autocomplete="off" novalidate>
-                        <input type="text">
-                        <input type="number">
-                        <input type="date">
-                        <input type="date">
+                <div class="hero-section-booking">
+                    <form class="booking-form" name="booking-form" autocomplete="off">
+                        <div>
+                            <label class="booking-lable" for="booking-destination">Destination</label>
+                            <input class="booking-input" type="text" id="booking-destination" name="booking-destination"
+                                placeholder="Dubai" required minlength="3" maxlength="20">
+                        </div>
+                        <div>
+                            <label class="booking-lable" for="booking-person">Person</label>
+                            <select class="booking-input" name="booking-person" id="booking-person">
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="more">More</option>
+                            </select>
+                        </div>
+                        <!-- <input class="booking-input" type="number" id="booking-person" name="booking-person"> -->
+                        <div>
+                            <label class="booking-lable" for="date-check-in">Check in</label>
+                            <input class="booking-input" type="date" id="date-check-in" name="date-check-in">
+                        </div>
+                        <div>
+                            <label class="booking-lable" for="date-check-out">Check out</label>
+                            <input class="booking-input" type="date" id="date-check-out" name="date-check-out">
+                        </div>
                     </form>
-                    <button class="button booking-button" type="submit">Book Now</button>
-                </div> -->
+                    <button class="button booking-button" type="button">Book <br> Now</button>
+                </div>
             </div>
         </section>
         <section class="section destinations-section" id="destinations-section">
@@ -269,7 +290,7 @@
                 <div class="blog-content">
                     <img class="blog-img" src="./images/blog-photo-italy.jpg"
                         alt="city in the beautiful rocking seaside in Italy">
-                    <article>
+                    <article class="blog-article-content">
                         <h3 class="blog-article-title">Beautiful Italy
                             <br> Let’s travel
                         </h3>
@@ -288,7 +309,7 @@
                             Nor again is there
                             anyone who loves or pursues.
                         </p>
-                        <p><a href="#" class="blog-link">Read more</a></p>
+                        <a href="#" class="blog-link">Read more</a>
                     </article>
                 </div>
             </div>
@@ -590,7 +611,12 @@
     </main>
     <aside class="aside-section">
         <h2 class="aside-title">Our Newsletter</h2>
-        <div class="aside-content"><input class="input" type="email">
+        <div class="aside-content">
+            <div class="aside-form">
+                <label class="aside-label" for="user-email">Email</label>
+                <input class="aside-input" type="email" id="user-email" name="user-email"
+                    placeholder="Enter your email" required>
+            </div>
             <button class="button button-subsribe" type="submit">Subscribe</button>
         </div>
     </aside>
