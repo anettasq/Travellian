@@ -1,0 +1,31 @@
+@import './utils/fonts';
+@import './utils/variables';
+@import './utils/texts';
+
+@import './base';
+
+@import './utils/mixins';
+
+@import './components/aside-form';
+@import './components/booking-forms';
+@import './components/buttons';
+@import './components/destinations-card';
+@import './components/gallery-card';
+@import './components/offers-card';
+@import './components/blog-article';
+@import './components/testimonials-card';
+@import './components/trip-cards';
+@import './components/star-block';
+@import './components/slider';
+@import './components/copyright';
+
+@import './layouts/sections';
+@import './layouts/header';
+@import './layouts/hero-section';
+@import './layouts/destinations-section';
+@import './layouts/offers-section';
+@import './layouts/tour-planners-section';
+@import './layouts/gallery-section';
+@import './layouts/testimonials-section';
+@import './layouts/aside-section';
+@import './layouts/footer';

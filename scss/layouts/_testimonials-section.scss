@@ -1,0 +1,12 @@
+.testimonials-section {
+    &__text {
+        margin-bottom: 160px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        gap: 32px;
+        margin-bottom: 160px;
+    }
+}

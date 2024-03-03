@@ -1,0 +1,11 @@
+.gallery-section {
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            gap: 32px;
+            /*  */
+            /* flex-wrap: wrap;
+            flex-basis: calc((100% - 96px) / 4); */
+            /*  */
+        }
+}
