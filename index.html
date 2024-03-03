@@ -5,48 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travellian</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 
 <body>
     <header class="header">
         <div class="container">
-            <div class="header-container">
-                <nav class="header-nav">
+            <div class="header__container">
+                <nav class="header__nav">
                     <a href="./">
                         <img src="./images/logo.svg" alt="logo of Travellian">
                     </a>
-                    <ul class="header-menu">
-                        <li><a class="header-link" href="./index.html">Home</a></li>
-                        <li><a class="header-link" href="#destinations-section">Destinations</a></li>
-                        <li><a class="header-link" href="#offers-section">Special Offer</a></li>
-                        <li><a class="header-link" href="#blog-section">Blog</a></li>
-                        <li><a class="header-link" href="#trip-planners-section">Pricing</a></li>
-                        <li><a class="header-link" href="#gallery-section">Gallery</a></li>
+                    <ul class="header__menu">
+                        <li><a class="header__link" href="./index.html">Home</a></li>
+                        <li><a class="header__link" href="#destinations-section">Destinations</a></li>
+                        <li><a class="header__link" href="#offers-section">Special Offer</a></li>
+                        <li><a class="header__link" href="#blog-section">Blog</a></li>
+                        <li><a class="header__link" href="#tour-planners-section">Pricing</a></li>
+                        <li><a class="header__link" href="#gallery-section">Gallery</a></li>
                     </ul>
                 </nav>
-                <button class="button button-login" type="button">Login</button>
-                <button class="button button-sign-up" type="button">Sign up</button>
+                <button class="button button__login" type="button">Login</button>
+                <button class="button button__sign-up" type="button">Sign up</button>
             </div>
         </div>
     </header>
     <main>
         <section class="hero-section">
             <div class="container">
-                <div class="hero-section-text">
-                    <h1 class="section-title hero-title">Start your unforgettable journey with us.</h1>
-                    <p class="section-text hero-text">The best travel for your jouney begins now</p>
+                <div class="hero-section__content">
+                    <h1 class="hero-section__title">Start your unforgettable journey with us.</h1>
+                    <p class="hero-section__text section__text">The best travel for your jouney begins now</p>
                 </div>
-                <div class="hero-section-booking">
+                <div class="hero-section__booking">
                     <form class="booking-form" name="booking-form" autocomplete="off">
                         <div>
-                            <label class="booking-lable" for="booking-destination">Destination</label>
-                            <input class="booking-input" type="text" id="booking-destination" name="booking-destination"
-                                placeholder="Dubai" required minlength="3" maxlength="20">
+                            <label class="booking-form__lable" for="booking-destination">Destination</label>
+                            <input class="booking-form__input" type="text" id="booking-destination"
+                                name="booking-destination" placeholder="Dubai" required minlength="3" maxlength="20">
                         </div>
                         <div>
-                            <label class="booking-lable" for="booking-person">Person</label>
-                            <select class="booking-input" name="booking-person" id="booking-person">
+                            <label class="booking-form__lable" for="booking-person">Person</label>
+                            <select class="booking-form__input" name="booking-person" id="booking-person">
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
@@ -55,123 +55,126 @@
                                 <option value="more">More</option>
                             </select>
                         </div>
-                        <!-- <input class="booking-input" type="number" id="booking-person" name="booking-person"> -->
                         <div>
-                            <label class="booking-lable" for="date-check-in">Check in</label>
-                            <input class="booking-input" type="date" id="date-check-in" name="date-check-in">
+                            <label class="booking-form__lable" for="date-check-in">Check in</label>
+                            <input class="booking-form__input" type="date" id="date-check-in" name="date-check-in">
                         </div>
                         <div>
-                            <label class="booking-lable" for="date-check-out">Check out</label>
-                            <input class="booking-input" type="date" id="date-check-out" name="date-check-out">
+                            <label class="booking-form__lable" for="date-check-out">Check out</label>
+                            <input class="booking-form__input" type="date" id="date-check-out" name="date-check-out">
                         </div>
                     </form>
-                    <button class="button booking-button" type="button">Book <br> Now</button>
+                    <button class="button button__booking" type="button">Book <br> Now</button>
                 </div>
             </div>
         </section>
         <section class="section destinations-section" id="destinations-section">
             <div class="container">
-                <h2 class="section-title destinations-title">Popular Destinations</h2>
-                <div class="section-title-content">
-                    <p class="section-text">Most popular destinations around the world, from
+                <h2 class="section__title">Popular Destinations</h2>
+                <div class="section__title-content">
+                    <p class="section__text">Most popular destinations around the world, from
                         historical places to
                         natural
                         wonders.</p>
-                    <div class="slide-buttons">
-                        <button class="slide-button" type="button">
-                            <svg class="slide-arrow-left" width="66" height="60">
+                    <div class="slider">
+                        <button class="slider__button" type="button">
+                            <svg class="slider__button--left" width="66" height="60">
                                 <use href="./images/icons.svg#icon-slide-arrow"></use>
                             </svg>
                         </button>
-                        <button class="slide-button" type="button">
-                            <svg class="slide-arrow-right" width="66" height="60">
+                        <button class="slider__button" type="button">
+                            <svg class="slider__button--right" width="66" height="60">
                                 <use href="./images/icons.svg#icon-slide-arrow"></use>
                             </svg>
                         </button>
                     </div>
                 </div>
-                <ul class="destinations-list">
+                <ul class="destinations-section__list">
                     <li class="destinations-card">
-                        <h3 class="destinations-card-title">Monument of Berlin</h3>
-                        <div class="destinations-card-content">
-                            <svg class="location" width="24" height="24">
+                        <img class="destinations-card__photo" src="./images/destination-berlin.jpg" alt="Berlin">
+                        <h3 class="destinations-card__title">Monument of Berlin</h3>
+                        <div class="destinations-card__content">
+                            <svg class="destinations-card__location" width="24" height="24">
                                 <use href="./images/icons.svg#icon-location"></use>
                             </svg>
-                            <p class="destinations-card-text">Berlin, Germany</p>
+                            <p class="destinations-card__text">Berlin, Germany</p>
                         </div>
                     </li>
                     <li class="destinations-card">
-                        <h3 class="destinations-card-title">Millennium Bridge</h3>
-                        <div class="destinations-card-content">
-                            <svg class="location" width="24" height="24">
+                        <img class="destinations-card__photo" src="./images/destination-london.jpg" alt="London">
+                        <h3 class="destinations-card__title">Millennium Bridge</h3>
+                        <div class="destinations-card__content">
+                            <svg class="destinations-card__location" width="24" height="24">
                                 <use href="./images/icons.svg#icon-location"></use>
                             </svg>
-                            <p class="destinations-card-text">London, United Kingdom</p>
+                            <p class="destinations-card__text">London, United Kingdom</p>
                         </div>
-                        <!-- </li>
-                    <li class="destinations-card">
-                        <h3 class="destinations-card-title">Rialto Bridge</h3>
-                        <div class="destinations-card-content">
-                            <svg class="location" width="24" height="24">
-                                <use href="./images/icons.svg#icon-location"></use>
-                            </svg>
-                            <p class="destinations-card-text">Venice, Italy</p>
-                        </div> -->
                     </li>
                     <li class="destinations-card">
-                        <h3 class="destinations-card-title">Sea of Orange Tiles</h3>
-                        <div class="destinations-card-content">
-                            <svg class="location" width="24" height="24">
+                        <img class="destinations-card__photo" src="./images/destination-venice.jpg" alt="Venice">
+                        <h3 class="destinations-card__title">Rialto Bridge</h3>
+                        <div class="destinations-card__content">
+                            <svg class="destinations-card__location" width="24" height="24">
                                 <use href="./images/icons.svg#icon-location"></use>
                             </svg>
-                            <p class="destinations-card-text">Lisbon, Portugal</p>
+                            <p class="destinations-card__text">Venice, Italy</p>
+                        </div>
+                    </li>
+                    <li class="destinations-card">
+                        <img class="destinations-card__photo" src="./images/destination-lisbon.jpg" alt="Lisbon">
+                        <h3 class="destinations-card__title">Sea of Orange Tiles</h3>
+                        <div class="destinations-card__content">
+                            <svg class="destinations-card__location" width="24" height="24">
+                                <use href="./images/icons.svg#icon-location"></use>
+                            </svg>
+                            <p class="destinations-card__text">Lisbon, Portugal</p>
                         </div>
                     </li>
                 </ul>
             </div>
         </section>
-        <section class="section" id="offers-section">
+        <section class="section offers-section" id="offers-section">
             <div class="container">
-                <h2 class="section-title offers-title">Special Offer</h2>
-                <div class="section-title-content">
-                    <div class="slide-buttons">
-                        <button class="slide-button" type="button">
-                            <svg class="slide-arrow-left" width="66" height="60">
+                <h2 class="section__title section__title--right-position">Special Offer</h2>
+                <div class="section__title-content">
+                    <div class="slider">
+                        <button class="slider__button" type="button">
+                            <svg class="slider__button--left" width="66" height="60">
                                 <use href="./images/icons.svg#icon-slide-arrow"></use>
                             </svg>
                         </button>
-                        <button class="slide-button" type="button">
-                            <svg class="slide-arrow-right" width="66" height="60">
+                        <button class="slider__button" type="button">
+                            <svg class="slider__button--right" width="66" height="60">
                                 <use href="./images/icons.svg#icon-slide-arrow"></use>
                             </svg>
                         </button>
                     </div>
-                    <p class="section-text offers-text">Check out our special offer and discounts
+                    <p class="section__text offers-section__text">Check out our special offer and discounts
                     </p>
                 </div>
-                <ul class="offers-list">
+                <ul class="offers-section__list">
                     <li>
                         <article class="offer-card">
-                            <div class="offer-photo">
+                            <div class="offer-card__photo">
                                 <img src="./images/offers-1.jpg" alt="Portugal">
                             </div>
-                            <div class="offer-text">
+                            <div class="offer-card__text">
                                 <div>
-                                    <h3 class="offer-card-title">Lisbon, Portugal</h3>
+                                    <h3 class="offer-card__title">Lisbon, Portugal</h3>
                                     <div class="star-block">
-                                        <svg class="icon-star" width="32" height="32">
+                                        <svg class="star-block__star" width="32" height="32">
                                             <use href="./images/icons.svg#icon-star"></use>
                                         </svg>
-                                        <svg class="icon-star" width="32" height="32">
+                                        <svg class="star-block__star" width="32" height="32">
                                             <use href="./images/icons.svg#icon-star"></use>
                                         </svg>
-                                        <svg class="icon-star" width="32" height="32">
+                                        <svg class="star-block__star" width="32" height="32">
                                             <use href="./images/icons.svg#icon-star"></use>
                                         </svg>
-                                        <svg class="icon-star" width="32" height="32">
+                                        <svg class="star-block__star" width="32" height="32">
                                             <use href="./images/icons.svg#icon-star"></use>
                                         </svg>
-                                        <svg class="icon-star" width="32" height="32">
+                                        <svg class="star-block__star" width="32" height="32">
                                             <use href="./images/icons.svg#icon-star"></use>
                                         </svg>
                                     </div>
@@ -183,12 +186,12 @@
                                     renaissance. Passage and going through the cites of the world in classical
                                     literature.
                                 </p>
-                                <div class="offer-card-price">
-                                    <div class="price-text">
-                                        <p class="offer-start-price">From</p>
-                                        <p class="offer-price">€500</p>
+                                <div class="offer-card__price-content">
+                                    <div class="offer-card__price-text">
+                                        <p class="offer-card__start-price">From</p>
+                                        <p class="offer-card__price text-brand">€500</p>
                                     </div>
-                                    <button class="button button-details" type="button">Details</button>
+                                    <button class="button button__details text-uppercase" type="button">Details</button>
 
                                 </div>
                             </div>
@@ -196,26 +199,26 @@
                     </li>
                     <li>
                         <article class="offer-card">
-                            <div class="offer-photo">
+                            <div class="offer-card__photo">
                                 <img src="./images/offers-2.jpg" alt="Greece">
                             </div>
-                            <div class="offer-text">
+                            <div class="offer-card__text">
                                 <div>
-                                    <h3 class="offer-card-title">Athens, Greece</h3>
+                                    <h3 class="offer-card__title">Athens, Greece</h3>
                                     <div class="star-block">
-                                        <svg class="icon-star" width="32" height="32">
+                                        <svg class="star-block__star" width="32" height="32">
                                             <use href="./images/icons.svg#icon-star"></use>
                                         </svg>
-                                        <svg class="icon-star" width="32" height="32">
+                                        <svg class="star-block__star" width="32" height="32">
                                             <use href="./images/icons.svg#icon-star"></use>
                                         </svg>
-                                        <svg class="icon-star" width="32" height="32">
+                                        <svg class="star-block__star" width="32" height="32">
                                             <use href="./images/icons.svg#icon-star"></use>
                                         </svg>
-                                        <svg class="icon-star" width="32" height="32">
+                                        <svg class="star-block__star" width="32" height="32">
                                             <use href="./images/icons.svg#icon-star"></use>
                                         </svg>
-                                        <svg class="icon-star" width="32" height="32">
+                                        <svg class="star-block__star" width="32" height="32">
                                             <use href="./images/icons.svg#icon-star"></use>
                                         </svg>
                                     </div>
@@ -227,38 +230,38 @@
                                     renaissance. Passage and going through the cites of the world in classical
                                     literature.
                                 </p>
-                                <div class="offer-card-price">
-                                    <div class="price-text">
-                                        <p class="offer-start-price">From</p>
-                                        <p class="offer-price">€800</p>
+                                <div class="offer-card__price-content">
+                                    <div class="offer-card__price-text">
+                                        <p class="offer-card__start-price">From</p>
+                                        <p class="offer-card__price text-brand">€800</p>
                                     </div>
-                                    <button class="button button-details" type="button">Details</button>
+                                    <button class="button button-details text-uppercase" type="button">Details</button>
                                 </div>
                             </div>
                         </article>
                     </li>
                     <li>
                         <article class="offer-card">
-                            <div class="offer-photo">
+                            <div class="offer-card__photo">
                                 <img src="./images/offers-3.jpg" alt="Italy">
                             </div>
-                            <div class="offer-text">
+                            <div class="offer-card__text">
                                 <div>
-                                    <h3 class="offer-card-title">Rome, Italy</h3>
+                                    <h3 class="offer-card__title">Rome, Italy</h3>
                                     <div class="star-block">
-                                        <svg class="icon-star" width="32" height="32">
+                                        <svg class="star-block__star" width="32" height="32">
                                             <use href="./images/icons.svg#icon-star"></use>
                                         </svg>
-                                        <svg class="icon-star" width="32" height="32">
+                                        <svg class="star-block__star" width="32" height="32">
                                             <use href="./images/icons.svg#icon-star"></use>
                                         </svg>
-                                        <svg class="icon-star" width="32" height="32">
+                                        <svg class="star-block__star" width="32" height="32">
                                             <use href="./images/icons.svg#icon-star"></use>
                                         </svg>
-                                        <svg class="icon-star" width="32" height="32">
+                                        <svg class="star-block__star" width="32" height="32">
                                             <use href="./images/icons.svg#icon-star"></use>
                                         </svg>
-                                        <svg class="icon-star" width="32" height="32">
+                                        <svg class="star-block__star" width="32" height="32">
                                             <use href="./images/icons.svg#icon-star"></use>
                                         </svg>
                                     </div>
@@ -270,12 +273,12 @@
                                     renaissance. Passage and going through the cites of the world in classical
                                     literature.
                                 </p>
-                                <div class="offer-card-price">
-                                    <div class="price-text">
-                                        <p class="offer-start-price">From</p>
-                                        <p class="offer-price">€750</p>
+                                <div class="offer-card__price-content">
+                                    <div class="offer-card__price-text">
+                                        <p class="offer-card__start-price">From</p>
+                                        <p class="offer-card__price text-brand">€750</p>
                                     </div>
-                                    <button class="button button-details" type="button">Details</button>
+                                    <button class="button button-details text-uppercase" type="button">Details</button>
                                 </div>
                             </div>
                         </article>
@@ -285,16 +288,16 @@
         </section>
         <section class="section" id="blog-section">
             <div class="container">
-                <h2 class="section-title blog-title">Our Blog</h2>
-                <p class="section-text">An insight the incredible experience in the world</p>
-                <div class="blog-content">
-                    <img class="blog-img" src="./images/blog-photo-italy.jpg"
+                <h2 class="section__title section__title--title-no-block">Our Blog</h2>
+                <p class="section__text">An insight the incredible experience in the world</p>
+                <div class="blog-article">
+                    <img class="blog-article__img" src="./images/blog-photo-italy.jpg"
                         alt="city in the beautiful rocking seaside in Italy">
-                    <article class="blog-article-content">
-                        <h3 class="blog-article-title">Beautiful Italy
+                    <article class="blog-article__content">
+                        <h3 class="blog-article__title">Beautiful Italy
                             <br> Let’s travel
                         </h3>
-                        <p class="blog-article-text">But I must explain to you how all this mistaken idea of denouncing
+                        <p class="blog-article__text">But I must explain to you how all this mistaken idea of denouncing
                             pleasure
                             and praising pain was
                             born and I will give
@@ -309,17 +312,18 @@
                             Nor again is there
                             anyone who loves or pursues.
                         </p>
-                        <a href="#" class="blog-link">Read more</a>
+                        <a href="#" class="blog-article__link text-brand">Read more &#8594;</a>
                     </article>
                 </div>
             </div>
         </section>
-        <section class="section" id="trip-planners-section">
+        <section class="section tour-planners-section" id="tour-planners-section">
             <div class="container">
-                <div class="trip-planners-container">
-                    <div class="trip-planners-title-block limited">
-                        <h2 class="section-title trip-title">Trip Planners</h2>
-                        <p class="section-text trip-text">20 years from now you will be more disappointed by the things
+                <div class="tour-planners-section__container">
+                    <div class="tour-planners-section__title-block tour-planners-section__title-block--limited">
+                        <h2 class="section__title">Trip Planners</h2>
+                        <p class="section__text tour-planners-section__text">20 years from now you will be more
+                            disappointed by the things
                             that you
                             didn’t
                             do.
@@ -327,105 +331,137 @@
                             start travelling,
                             start throwing off the bowlines.
                         </p>
-                        <div class="trip-button-content">
-                            <button class="button button-trip" type="button">View all trip plans</button>
+                        <div class="tour-planners-section__button-content">
+                            <button class="button button__trip" type="button">View all trip plans</button>
 
                         </div>
                     </div>
-                    <ul class="trips">
+                    <ul class="tour-planners-section__list">
                         <li class="trip-card">
-                            <div class="trip-card-img">
-                                <img class="trip-card-photo" src="./images/tours-1.jpg" alt="trip images">
+                            <div class="trip-card__img">
+                                <img class="trip-card__photo" src="./images/tours-1.jpg" alt="trip images">
                             </div>
-                            <div class="trip-card-content">
-                                <div class="trip-card-name">
-                                    <p class="trip-card-text">Guided Tour</p>
+                            <div class="trip-card__content">
+                                <div class="trip-card__name">
+                                    <p class="text-uppercase">Guided Tour</p>
                                     <p>€99/Day</p>
                                 </div>
-                                <h3 class="trip-card-title">Rome City Tour</h3>
-                                <div class="trip-card-star-block">
+                                <h3 class="trip-card__title">Rome City Tour</h3>
+                                <div class="trip-card__star-block">
                                     <div class="star-block">
-                                        <svg class="icon-star" width="32" height="32">
+                                        <svg class="star-block__star" width="32" height="32">
                                             <use href="./images/icons.svg#icon-star"></use>
                                         </svg>
-                                        <svg class="icon-star" width="32" height="32">
+                                        <svg class="star-block__star" width="32" height="32">
                                             <use href="./images/icons.svg#icon-star"></use>
                                         </svg>
-                                        <svg class="icon-star" width="32" height="32">
+                                        <svg class="star-block__star" width="32" height="32">
                                             <use href="./images/icons.svg#icon-star"></use>
                                         </svg>
-                                        <svg class="icon-star" width="32" height="32">
+                                        <svg class="star-block__star" width="32" height="32">
                                             <use href="./images/icons.svg#icon-star"></use>
                                         </svg>
-                                        <svg class="icon-star" width="32" height="32">
+                                        <svg class="star-block__star" width="32" height="32">
                                             <use href="./images/icons.svg#icon-star"></use>
                                         </svg>
                                     </div>
-                                    <p class="trip-card-days">7 Days tour</p>
+                                    <p class="trip-card__days">7 Days tour</p>
                                 </div>
                             </div>
                         </li>
                         <li class="trip-card">
-                            <div class="trip-card-img">
+                            <div class="trip-card__img">
                                 <img trip-card-photo src="./images/tours-2.jpg" alt="trip images">
                             </div>
-                            <div class="trip-card-content">
-                                <div class="trip-card-name">
-                                    <p class="trip-card-text">Guided Tour</p>
+                            <div class="trip-card__content">
+                                <div class="trip-card__name">
+                                    <p class="text-uppercase">Guided Tour</p>
                                     <p>€99/Day</p>
                                 </div>
-                                <h3 class="trip-card-title">Paris City Tour</h3>
-                                <div class="trip-card-star-block">
+                                <h3 class="trip-card__title">Paris City Tour</h3>
+                                <div class="trip-card__star-block">
                                     <div class="star-block">
-                                        <svg class="icon-star" width="32" height="32">
+                                        <svg class="star-block__star" width="32" height="32">
                                             <use href="./images/icons.svg#icon-star"></use>
                                         </svg>
-                                        <svg class="icon-star" width="32" height="32">
+                                        <svg class="star-block__star" width="32" height="32">
                                             <use href="./images/icons.svg#icon-star"></use>
                                         </svg>
-                                        <svg class="icon-star" width="32" height="32">
+                                        <svg class="star-block__star" width="32" height="32">
                                             <use href="./images/icons.svg#icon-star"></use>
                                         </svg>
-                                        <svg class="icon-star" width="32" height="32">
+                                        <svg class="star-block__star" width="32" height="32">
                                             <use href="./images/icons.svg#icon-star"></use>
                                         </svg>
-                                        <svg class="icon-star" width="32" height="32">
+                                        <svg class="star-block__star" width="32" height="32">
                                             <use href="./images/icons.svg#icon-star"></use>
                                         </svg>
                                     </div>
-                                    <p class="trip-card-days">7 Days tour</p>
+                                    <p class="trip-card__days">7 Days tour</p>
                                 </div>
                             </div>
                         </li>
                         <li class="trip-card">
-                            <div class="trip-card-img">
+                            <div class="trip-card__img">
                                 <img trip-card-photo src="./images/tours-3.jpg" alt="trip images">
                             </div>
-                            <div class="trip-card-content">
-                                <div class="trip-card-name">
-                                    <p class="trip-card-text">Guided Tour</p>
+                            <div class="trip-card__content">
+                                <div class="trip-card__name">
+                                    <p class="text-uppercase">Guided Tour</p>
                                     <p>€99/Day</p>
                                 </div>
-                                <h3 class="trip-card-title">Barcelona City Tour</h3>
-                                <div class="trip-card-star-block">
+                                <h3 class="trip-card__title">Barcelona City Tour</h3>
+                                <div class="trip-card__star-block">
                                     <div class="star-block">
-                                        <svg class="icon-star" width="32" height="32">
+                                        <svg class="star-block__star" width="32" height="32">
                                             <use href="./images/icons.svg#icon-star"></use>
                                         </svg>
-                                        <svg class="icon-star" width="32" height="32">
+                                        <svg class="star-block__star" width="32" height="32">
                                             <use href="./images/icons.svg#icon-star"></use>
                                         </svg>
-                                        <svg class="icon-star" width="32" height="32">
+                                        <svg class="star-block__star" width="32" height="32">
                                             <use href="./images/icons.svg#icon-star"></use>
                                         </svg>
-                                        <svg class="icon-star" width="32" height="32">
+                                        <svg class="star-block__star" width="32" height="32">
                                             <use href="./images/icons.svg#icon-star"></use>
                                         </svg>
-                                        <svg class="icon-star" width="32" height="32">
+                                        <svg class="star-block__star" width="32" height="32">
                                             <use href="./images/icons.svg#icon-star"></use>
                                         </svg>
                                     </div>
-                                    <p class="trip-card-days">7 Days tour</p>
+                                    <p class="trip-card__days">7 Days tour</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="trip-card">
+                            <div class="trip-card__img">
+                                <img trip-card-photo src="./images/tours-4.jpg" alt="trip images">
+                            </div>
+                            <div class="trip-card__content">
+                                <div class="trip-card__name">
+                                    <p class="text-uppercase">Guided Tour</p>
+                                    <p>€99/Day</p>
+                                </div>
+                                <h3 class="trip-card__title">Budapest City Tour</h3>
+                                <div class="trip-card__star-block">
+                                    <div class="star-block">
+                                        <svg class="star-block__star" width="32" height="32">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star-block__star" width="32" height="32">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star-block__star" width="32" height="32">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star-block__star" width="32" height="32">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star-block__star" width="32" height="32">
+                                            <use href="./images/icons.svg#icon-star"></use>
+                                        </svg>
+                                    </div>
+                                    <p class="trip-card__days">7 Days tour</p>
                                 </div>
                             </div>
                         </li>
@@ -433,49 +469,50 @@
                 </div>
             </div>
         </section>
-        <section class="section" id="gallery-section">
+        <section class="section gallery-section" id="gallery-section">
             <div class="container">
-                <h2 class="section-title galery-title">Destination Gallery</h2>
-                <div class="section-title-content">
-                    <p class="section-text">Our photo gallery on trip</p>
-                    <div class="slide-buttons">
-                        <button class="slide-button" type="button">
-                            <svg class="slide-arrow-left" width="66" height="60">
+                <h2 class="section__title">Destination Gallery</h2>
+                <div class="section__title-content">
+                    <p class="section__text">Our photo gallery on trip</p>
+                    <div class="slider">
+                        <button class="slider__button" type="button">
+                            <svg class="slider__button--left" width="66" height="60">
                                 <use href="./images/icons.svg#icon-slide-arrow"></use>
                             </svg>
                         </button>
-                        <button class="slide-button" type="button">
-                            <svg class="slide-arrow-right" width="66" height="60">
+                        <button class="slider__button" type="button">
+                            <svg class="slider__button--right" width="66" height="60">
                                 <use href="./images/icons.svg#icon-slide-arrow"></use>
                             </svg>
                         </button>
                     </div>
                 </div>
-                <ul class="gallery">
+                <ul class="gallery-section__list">
                     <li class="galery-card">
-                        <img class="galery-photo" src="./images/galery-1.jpg" alt="man and art">
+                        <img class="galery-card__photo" src="./images/galery-1.jpg" alt="man and art">
                     </li>
                     <li class="galery-card">
-                        <img class="galery-photo" src="./images/galery-2.jpg" alt="coupl near sea">
+                        <img class="galery-card__photo" src="./images/galery-2.jpg" alt="coupl near sea">
                     </li>
                     <li class="galery-card">
-                        <img class="galery-photo" src="./images/galery-3.jpg" alt="girl with backpack">
+                        <img class="galery-card__photo" src="./images/galery-3.jpg" alt="girl with backpack">
                     </li>
                     <li class="galery-card">
-                        <img class="galery-photo" src="./images/galery-4.jpg" alt="travel man">
+                        <img class="galery-card__photo" src="./images/galery-4.jpg" alt="travel man">
                     </li>
                 </ul>
             </div>
         </section>
         <section class="section testimonials-section">
             <div class="container">
-                <h2 class="section-title testimonials-title">Traveler’s Experiences</h2>
-                <p class=" section-text testimonials-section-text">Here some awesome feedback from our travelers</p>
-                <ul class="testimonials-list">
+                <h2 class="section__title section__title--title-no-block">Traveler’s Experiences</h2>
+                <p class=" section__text testimonials-section__text">Here some awesome feedback from our travelers</p>
+                <ul class="testimonials-section__list">
                     <li>
                         <article class="testimonials-card">
-                            <img class="testimonials-client-photo" src="./images/client-photo-1.jpg" alt="Client photo">
-                            <div class="testimonial-card-content">
+                            <img class="testimonials-card__client-photo" src="./images/client-photo-1.jpg"
+                                alt="Client photo">
+                            <div class="testimonials-card__content">
                                 <p>But I must explain to you how all this mistaken idea of denouncing pleasure and
                                     praising
                                     pain
@@ -487,26 +524,25 @@
                                     truth, the master-
                                     builder of human happiness.
                                 </p>
-                                <div>
-                                    <svg class="icon-star" width="32" height="32">
+                                <div class="star-block">
+                                    <svg class="star-block__star" width="32" height="32">
                                         <use href="./images/icons.svg#icon-star"></use>
                                     </svg>
-                                    <svg class="icon-star" width="32" height="32">
+                                    <svg class="star-block__star" width="32" height="32">
                                         <use href="./images/icons.svg#icon-star"></use>
                                     </svg>
-                                    <svg class="icon-star" width="32" height="32">
+                                    <svg class="star-block__star" width="32" height="32">
                                         <use href="./images/icons.svg#icon-star"></use>
                                     </svg>
-                                    <svg class="icon-star" width="32" height="32">
+                                    <svg class="star-block__star" width="32" height="32">
                                         <use href="./images/icons.svg#icon-star"></use>
                                     </svg>
-                                    <svg class="icon-star" width="32" height="32">
+                                    <svg class="star-block__star" width="32" height="32">
                                         <use href="./images/icons.svg#icon-star"></use>
                                     </svg>
-
                                 </div>
                                 <div>
-                                    <h3 class="testimonials-client-name">John Doe</h3>
+                                    <h3 class="testimonials-card__client-name">John Doe</h3>
                                     <p>Accountant</p>
                                 </div>
                             </div>
@@ -514,8 +550,9 @@
                     </li>
                     <li>
                         <article class="testimonials-card">
-                            <img class="testimonials-client-photo" src="./images/client-photo-2.jpg" alt="Client photo">
-                            <div class="testimonial-card-content">
+                            <img class="testimonials-card__client-photo" src="./images/client-photo-2.jpg"
+                                alt="Client photo">
+                            <div class="testimonials-card__content">
                                 <p>But I must explain to you how all this mistaken idea of denouncing pleasure and
                                     praising
                                     pain
@@ -527,25 +564,25 @@
                                     truth, the master-
                                     builder of human happiness.
                                 </p>
-                                <div>
-                                    <svg class="icon-star" width="32" height="32">
+                                <div class="star-block">
+                                    <svg class="star-block__star" width="32" height="32">
                                         <use href="./images/icons.svg#icon-star"></use>
                                     </svg>
-                                    <svg class="icon-star" width="32" height="32">
+                                    <svg class="star-block__star" width="32" height="32">
                                         <use href="./images/icons.svg#icon-star"></use>
                                     </svg>
-                                    <svg class="icon-star" width="32" height="32">
+                                    <svg class="star-block__star" width="32" height="32">
                                         <use href="./images/icons.svg#icon-star"></use>
                                     </svg>
-                                    <svg class="icon-star" width="32" height="32">
+                                    <svg class="star-block__star" width="32" height="32">
                                         <use href="./images/icons.svg#icon-star"></use>
                                     </svg>
-                                    <svg class="icon-star" width="32" height="32">
+                                    <svg class="star-block__star" width="32" height="32">
                                         <use href="./images/icons.svg#icon-star"></use>
                                     </svg>
                                 </div>
                                 <div>
-                                    <h3 class="testimonials-client-name">John Smith</h3>
+                                    <h3 class="testimonials-card__client-name">John Smith</h3>
                                     <p>Journalist, HWO News</p>
                                 </div>
                             </div>
@@ -553,8 +590,9 @@
                     </li>
                     <li>
                         <article class="testimonials-card">
-                            <img class="testimonials-client-photo" src="./images/client-photo-3.jpg" alt="Client photo">
-                            <div class="testimonial-card-content">
+                            <img class="testimonials-card__client-photo" src="./images/client-photo-3.jpg"
+                                alt="Client photo">
+                            <div class="testimonials-card__content">
                                 <p>But I must explain to you how all this mistaken idea of denouncing pleasure and
                                     praising
                                     pain
@@ -566,26 +604,25 @@
                                     truth, the master-
                                     builder of human happiness.
                                 </p>
-                                <div>
-                                    <svg class="icon-star" width="32" height="32">
+                                <div class="star-block">
+                                    <svg class="star-block__star" width="32" height="32">
                                         <use href="./images/icons.svg#icon-star"></use>
                                     </svg>
-                                    <svg class="icon-star" width="32" height="32">
+                                    <svg class="star-block__star" width="32" height="32">
                                         <use href="./images/icons.svg#icon-star"></use>
                                     </svg>
-                                    <svg class="icon-star" width="32" height="32">
+                                    <svg class="star-block__star" width="32" height="32">
                                         <use href="./images/icons.svg#icon-star"></use>
                                     </svg>
-                                    <svg class="icon-star" width="32" height="32">
+                                    <svg class="star-block__star" width="32" height="32">
                                         <use href="./images/icons.svg#icon-star"></use>
                                     </svg>
-                                    <svg class="icon-star" width="32" height="32">
+                                    <svg class="star-block__star" width="32" height="32">
                                         <use href="./images/icons.svg#icon-star"></use>
                                     </svg>
-
                                 </div>
                                 <div>
-                                    <h3 class="testimonials-client-name">Tamara Bellis</h3>
+                                    <h3 class="testimonials-card__client-name">Tamara Bellis</h3>
                                     <p>Managing Director, JTH</p>
 
                                 </div>
@@ -593,14 +630,14 @@
                         </article>
                     </li>
                 </ul>
-                <div class="slide-buttons">
-                    <button class="slide-button" type="button">
-                        <svg class="slide-arrow-left" width="66" height="60">
+                <div class="slider">
+                    <button class="slider__button" type="button">
+                        <svg class="slider__button--left" width="66" height="60">
                             <use href="./images/icons.svg#icon-slide-arrow"></use>
                         </svg>
                     </button>
-                    <button class="slide-button" type="button">
-                        <svg class="slide-arrow-right" width="66" height="60">
+                    <button class="slider__button" type="button">
+                        <svg class="slider__button--right" width="66" height="60">
                             <use href="./images/icons.svg#icon-slide-arrow"></use>
                         </svg>
                     </button>
@@ -610,56 +647,52 @@
         </section>
     </main>
     <aside class="aside-section">
-        <h2 class="aside-title">Our Newsletter</h2>
-        <div class="aside-content">
+        <h2 class="aside-section__title">Our Newsletter</h2>
+        <div class="aside-section__content">
             <div class="aside-form">
-                <label class="aside-label" for="user-email">Email</label>
-                <input class="aside-input" type="email" id="user-email" name="user-email"
+                <label class="aside-form__label" for="user-email">Email</label>
+                <input class="aside-form__input" type="email" id="user-email" name="user-email"
                     placeholder="Enter your email" required>
             </div>
-            <button class="button button-subsribe" type="submit">Subscribe</button>
+            <button class="button button__subsribe" type="submit">Subscribe</button>
         </div>
     </aside>
-    <footer>
+    <footer class="footer">
         <div class="container">
-            <div class="footer-container">
+            <div class="footer__container">
                 <div>
-                    <a class="footer-logo" href="#">
+                    <a class="footer__logo" href="#">
                         <img src="./images/logo.svg" alt="logo of Travellian">
                     </a>
                     <p class="copyright">Copyright © Travellian 2020 All rights reserved</p>
                 </div>
                 <nav>
-                    <h2 class="footer-title">Menu</h2>
-                    <!-- <div> -->
-                    <ul class="footer-list">
-                        <li><a class="footer-link" href="./index.html">Home</a></li>
-                        <li><a class="footer-link" href="#destinations-section">Destinations</a></li>
-                        <li><a class="footer-link" href="#offers-section">Special Offer</a></li>
-                        <li><a class="footer-link" href="#blog-section">Blog</a></li>
-                        <li><a class="footer-link" href="#trip-planners-section">Pricing</a></li>
-                        <li><a class="footer-link" href="#gallery-section">Gallery</a></li>
+                    <h2 class="footer__title text-bold">Menu</h2>
+                    <ul class="footer__list">
+                        <li><a class="footer__link" href="./index.html">Home</a></li>
+                        <li><a class="footer__link" href="#destinations-section">Destinations</a></li>
+                        <li><a class="footer__link" href="#offers-section">Special Offer</a></li>
+                        <li><a class="footer__link" href="#blog-section">Blog</a></li>
+                        <li><a class="footer__link" href="#tour-planners-section">Pricing</a></li>
+                        <li><a class="footer__link" href="#gallery-section">Gallery</a></li>
                     </ul>
-                    <!-- </div> -->
                 </nav>
                 <div>
-                    <h2 class="footer-title">Information</h2>
-                    <!-- <address> -->
-                    <ul class="footer-list">
-                        <li><a class="footer-link" href="#" target="_blank">Destinations</a></li>
-                        <li><a class="footer-link" href="#" target="_blank">Supports</a></li>
-                        <li><a class="footer-link" href="#" target="_blank">Terms & Conditions</a></li>
-                        <li><a class="footer-link" href="#" target="_blank">Privacy</a></li>
+                    <h2 class="footer__title text-bold">Information</h2>
+                    <ul class="footer__list">
+                        <li><a class="footer__link" href="#" target="_blank">Destinations</a></li>
+                        <li><a class="footer__link" href="#" target="_blank">Supports</a></li>
+                        <li><a class="footer__link" href="#" target="_blank">Terms & Conditions</a></li>
+                        <li><a class="footer__link" href="#" target="_blank">Privacy</a></li>
                     </ul>
-                    <!-- </address> -->
                 </div>
                 <div>
-                    <h2 class="footer-title">Contact Info</h2>
+                    <h2 class="footer__title text-bold">Contact Info</h2>
                     <address>
-                        <ul class="footer-list">
-                            <li><a class="footer-link" href="tel:+123456789">+123 456 789</a></li>
-                            <li><a class="footer-link" href="mailto:info@travellian.com">info@travellian.com</a></li>
-                            <li><a class="footer-link" href="https://maps.app.goo.gl/YwV43qxRCTr2Uoiq6"
+                        <ul class="footer__list">
+                            <li><a class="footer__link" href="tel:+123456789">+123 456 789</a></li>
+                            <li><a class="footer__link" href="mailto:info@travellian.com">info@travellian.com</a></li>
+                            <li><a class="footer__link" href="https://maps.app.goo.gl/YwV43qxRCTr2Uoiq6"
                                     target="_blank">1245,
                                     New
                                     Yourk, USA</a></li>
@@ -667,26 +700,26 @@
                     </address>
                 </div>
                 <div>
-                    <h2 class="footer-title">Follow us on</h2>
+                    <h2 class="footer__title text-bold">Follow us on</h2>
                     <address>
-                        <ul class="footer-list footer-social">
+                        <ul class="footer__list footer__social">
                             <li><a href="#" target="_blank">
-                                    <svg class="address-social" width="32" height="32">
+                                    <svg class="footer__social-link" width="32" height="32">
                                         <use href="./images/icons.svg#icon-facebook"></use>
                                     </svg>
                                 </a></li>
                             <li><a href="#" target="_blank">
-                                    <svg class="address-social" width="32" height="32">
+                                    <svg class="footer__social-link" width="32" height="32">
                                         <use href="./images/icons.svg#icon-pinterest"></use>
                                     </svg>
                                 </a></li>
                             <li><a href="#" target="_blank">
-                                    <svg class="address-social" width="32" height="32">
+                                    <svg class="footer__social-link" width="32" height="32">
                                         <use href="./images/icons.svg#icon-instagram"></use>
                                     </svg>
                                 </a></li>
                             <li><a href="#" target="_blank">
-                                    <svg class="address-social" width="32" height="32">
+                                    <svg class="footer__social-link" width="32" height="32">
                                         <use href="./images/icons.svg#icon-twitter"></use>
                                     </svg>
                                 </a>

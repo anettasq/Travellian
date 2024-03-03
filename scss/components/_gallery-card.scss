@@ -1,0 +1,11 @@
+.galery-card {
+    transition: transform 0.3s;
+
+    &:hover {
+        transform: translateY(-40px)
+    }
+
+    &__photo {
+        min-width: 100%;
+    }
+}

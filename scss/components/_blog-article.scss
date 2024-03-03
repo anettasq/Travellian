@@ -1,0 +1,36 @@
+.blog-article {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+
+    &__img {
+        height: 800px;
+        border-radius: 26px;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &__title {
+        font-family: var(--title-font);
+        font-weight: 400;
+        font-size: 54px;
+        line-height: 1.3;
+    }
+
+    &__text {
+        font-size: 24px;
+        line-height: 2.1;
+    }
+
+    &__link {
+        font-size: 24px;
+        line-height: 52px;
+        text-decoration: none;
+    }
+}

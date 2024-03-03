@@ -1,0 +1,10 @@
+.offers-section {
+    &__text {
+        text-align: right;
+    }
+
+    &__list {
+        display: flex;
+        gap: 32px;
+    }
+}

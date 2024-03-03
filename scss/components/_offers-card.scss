@@ -1,0 +1,49 @@
+.offer-card {
+    border-radius: 26px;
+    background-color: var(--primary-color-light);
+    flex-basis: calc((100% - 64px) / 3);
+
+    &__photo img {
+        height: 286px;
+        max-width: 100%;
+    }
+
+    &__text {
+        padding: 40px 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 24px;
+    }
+
+    &__title {
+        color: var(--secondary-color-light);
+        font-size: 28px;
+        font-weight: 400;
+        margin-bottom: 8px;
+    }
+
+    &__price-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__price-text {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &__start-price {
+        color: var(--secondary-color-light);
+        font-size: 20px;
+        margin: 0;
+    }
+
+    &__price {
+        font-size: 40px;
+        margin: 0;
+    }
+}

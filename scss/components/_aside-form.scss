@@ -1,0 +1,23 @@
+.aside-form {
+
+    &__label {
+        font-size: 20px;
+        color: var(--secondary-color-light);
+    }
+
+    &__input {
+        margin-top: 16px;
+        padding: 24px 40px;
+        width: 100%;
+        background-color: var(--primary-color-light);
+        font-size: 20px;
+        border: none;
+        border-radius: 12px;
+        outline: none;
+
+        &::placeholder {
+            color: var(--primary-color-dark);
+            font-size: 20px;
+        }
+    }
+}

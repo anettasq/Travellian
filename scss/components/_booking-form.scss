@@ -1,0 +1,26 @@
+.booking-form {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 75px 100px 75px 32px;
+    background-color: var(--secondary-color-white);
+
+    &__lable {
+        display: block;
+        font-size: 16px;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+        color: var(--secondary-color-light);
+    }
+
+    &__input {
+        font-family: var(title-font);
+        font-size: 18px;
+        padding-bottom: 10px;
+        width: 196px;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        outline: none;
+    }
+}
