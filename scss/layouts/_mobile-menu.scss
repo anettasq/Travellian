@@ -1,0 +1,45 @@
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary-color-dark);
+    transform: translateX(100%);
+    transition: transform 0.3s;
+    padding: 25px;
+    z-index: 2;
+
+    &.is-open {
+        transform: translateX(0);
+    }
+
+    &__btn-close {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        background-color: var(--secondary-color-white);
+        color: var(--secondary-color-dark);
+        border: solid 1px;
+        border-radius: 25%;
+        cursor: pointer;
+    }
+
+    &__logo {
+        max-width: 140px;
+        margin-bottom: 25px;
+    }
+
+    &__link {
+        color: var(--secondary-color-white);
+        text-decoration: none;
+        font-size: 20px;
+        margin: 16px;
+
+        &:hover {
+            color: var(--primary-color-dark);
+        }
+    }
+}

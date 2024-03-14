@@ -1,11 +1,18 @@
 .gallery-section {
-        &__list {
-            display: flex;
-            justify-content: space-between;
-            gap: 32px;
-            /*  */
-            /* flex-wrap: wrap;
-            flex-basis: calc((100% - 96px) / 4); */
-            /*  */
+    &__title {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        // gap: 32px;
+
+        @media screen and (min-width: $bp-desktop-small) {
+            flex-direction: row;
         }
+    }
 }

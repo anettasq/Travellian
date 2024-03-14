@@ -3,7 +3,15 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding-top: 32px;
+    padding-top: 24px;
+
+    @media screen and (min-width: $bp-tablet) {
+        padding-top: 35px;
+    }
+
+    @media screen and (min-width: $bp-desktop-small) {
+        padding-top: 40px;
+    }
 
     &__container {
         display: flex;
@@ -17,12 +25,25 @@
         gap: 30px;
     }
 
+    &__logo {
+        max-width: 140px;
+
+        @media screen and (min-width: $bp-tablet) {
+            max-width: 235px;
+        }
+    }
+
     &__menu {
-        display: flex;
-        gap: 32px;
-        text-align: center;
-        flex-grow: 1;
-        justify-content: center;
+        display: none;
+
+        @media screen and (min-width: $bp-desktop-small) {
+            display: flex;
+            gap: 32px;
+            text-align: center;
+            align-items: center;
+            flex-grow: 1;
+            justify-content: center;
+        }
     }
 
     &__link {
@@ -31,8 +52,8 @@
         font-size: 20px;
 
         &:hover {
-                text-decoration: underline solid var(--primary-color-dark) 3px;
-                text-underline-offset: 2px;
-            }
+            text-decoration: underline solid var(--primary-color-dark) 3px;
+            text-underline-offset: 2px;
+        }
     }
 }
