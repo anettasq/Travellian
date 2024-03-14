@@ -1,25 +1,57 @@
 .trip-card {
-    flex-shrink: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    max-width: 300px;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    max-width: 730px;
 
-    &:hover .trip-card__img {
-        transform: translateY(0);
+    // @media screen and (min-width: $bp-tablet) {
+    // max-width: 730px;
+    // }
+
+    @media screen and (min-width: $bp-desktop-small) {
+        width: 250px;
+
+        &:hover .trip-card__img {
+            transform: translateY(0);
+        }
+
+        &:hover .trip-card__content {
+            transform: translateY(0);
+        }
     }
 
-    &:hover .trip-card__content {
-        transform: translateY(0);
+    @media screen and (min-width: $bp-desktop-medium) {
+        width: 300px;
     }
 
     &__img {
-        transform: translateY(73px);
-        transition: transform 0.3s;
+        height: 320px;
+        width: 100%;
+        border-radius: 26px;
+        overflow: hidden;
+
+        @media screen and (min-width: $bp-tablet) {
+            height: 350px;
+        }
+
+        @media screen and (min-width: $bp-desktop-medium) {
+            height: 400px;
+        }
+
+        @media screen and (min-width: $bp-desktop-small) {
+            transform: translateY(100px);
+            transition: transform 0.3s;
+        }
     }
 
     &__photo {
+        display: block;
+        object-fit: cover;
         max-width: 100%;
+        height: 100%;
     }
 
     &__content {
@@ -28,9 +60,12 @@
         gap: 12px;
         display: flex;
         flex-direction: column;
-        transform: translateY(-300px);
-        transition: transform 0.3s;
-        z-index: -1;
+
+        @media screen and (min-width: $bp-desktop-small) {
+            transform: translateY(-200px);
+            transition: transform 0.3s;
+            z-index: -2;
+        }
     }
 
     &__name {
@@ -53,5 +88,13 @@
         font-size: 28px;
         font-weight: 500;
         line-height: 1.3;
+
+        @media screen and (min-width: $bp-tablet) {
+            font-size: 32px;
+        }
+
+        @media screen and (min-width: $bp-desktop-small) {
+            font-size: 28px;
+        }
     }
 }

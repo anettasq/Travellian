@@ -1,7 +1,24 @@
 .slider {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     gap: 40px;
+
+    &--top {
+        display: none;
+
+        @media screen and (min-width: $bp-desktop-small) {
+            display: flex;
+            justify-content: end;
+        }
+    }
+
+    &--bottom {
+        margin: 100px auto 0 auto;
+
+        @media screen and (min-width: $bp-desktop-small) {
+            display: none;
+        }
+    }
 
     &__button {
         width: 66px;

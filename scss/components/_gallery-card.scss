@@ -1,11 +1,35 @@
-.galery-card {
-    transition: transform 0.3s;
+.gallery-card {
+    height: 320px;
+    width: 100%;
+    max-width: 730px;
+    border-radius: 26px;
+    display: flex;
+    overflow: hidden;
 
-    &:hover {
-        transform: translateY(-40px)
+    @media screen and (min-width: $bp-tablet) {
+        height: 350px;
+    }
+
+    @media screen and (min-width: $bp-desktop-small) {
+        transition: transform 0.3s;
+        height: 400px;
+
+        &:hover {
+            transform: translateY(-40px)
+        }
+    }
+
+    @media screen and (min-width: $bp-desktop-medium) {
+        height: 500px;
+    }
+
+    @media screen and (min-width: $bp-desktop-big) {
+        height: 570px;
     }
 
     &__photo {
+        object-fit: cover;
         min-width: 100%;
+        min-height: 100%;
     }
 }

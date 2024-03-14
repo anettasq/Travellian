@@ -1,12 +1,14 @@
 .testimonials-section {
-    &__text {
-        margin-bottom: 160px;
+    &__list {
+        margin: 100px 0;
+
+        @media screen and (min-width: $bp-tablet) {
+            margin: 160px 0;
+        }
     }
 
-    &__list {
+    &__slider {
         display: flex;
-        justify-content: space-between;
-        gap: 32px;
-        margin-bottom: 160px;
+        justify-content: flex-end;
     }
 }
