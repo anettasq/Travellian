@@ -9,8 +9,7 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-
-        // gap: 32px;
+        gap: 32px;
 
         @media screen and (min-width: $bp-desktop-small) {
             flex-direction: row;
