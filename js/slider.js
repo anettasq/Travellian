@@ -53,23 +53,24 @@ const swiperOffer = new Swiper('.swiper.offer', {
     },
 });
 
-const swiperGalery = new Swiper('.swiper.gallery', {
-    loop: true,
-    slidesPerView: 4,
-    spaceBetween: 32,
-    direction: 'vertical',
+// const swiperGalery = new Swiper('.swiper.gallery', {
+//     loop: true,
+//     slidesPerView: 4,
+//     spaceBetween: 32,
+//     direction: 'vertical',
 
-    breakpoints: {
-        1140: {
-            direction: 'horizontal',
-        },
-    },
+//     breakpoints: {
+//         1140: {
+//             direction: 'horizontal',
+//         },
+//     },
 
-    navigation: {
-        nextEl: '.gallery-button.next',
-        prevEl: '.gallery-button.prev',
-    },
-});
+
+//     navigation: {
+//         nextEl: '.gallery-button.next',
+//         prevEl: '.gallery-button.prev',
+//     },
+// });
 
 const swiperTestimonials = new Swiper('.swiper.testimonials', {
     loop: true,
